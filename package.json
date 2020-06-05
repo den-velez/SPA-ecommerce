@@ -1,0 +1,16 @@
+{
+  "name": "spa-store",
+  "version": "1.0.0",
+  "description": "single page application javascript vanilla",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SPA",
+    "javascritp",
+    "vanilla"
+  ],
+  "author": "den velez den.velez@gmail.com",
+  "license": "ISC"
+}
