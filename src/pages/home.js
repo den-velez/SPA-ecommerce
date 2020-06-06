@@ -1,8 +1,5 @@
+const Home = () => {
+  return "caca";
+};
 
-const Home = () =>{
-  return '
-  caca
-  '
-}
-
-export default Home
+export default Home;
