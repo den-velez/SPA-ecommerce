@@ -1,5 +1,5 @@
 # SPA-ecommerce
-e-commerce
+SPA e-commerce, able to add or empty car, modal to show all specifications. Usign CSS Grid and 100% responsive
 
 ### dependecies
   - @babel/core
