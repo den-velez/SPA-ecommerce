@@ -1,6 +1,5 @@
 import Header from "../templates/header";
 import Hero from "../templates/hero";
-import Modal from "../templates/modal";
 import Footer from "../templates/footer";
 import Home from "../pages/home";
 import Error404 from "../pages/error404";
@@ -11,14 +10,14 @@ const routes = {
   "/cart": Cart,
 };
 const router = () => {
-  const header = null || document.getElementById("header");
-  const hero = null || document.getElementById("hero");
-  const footer = null || document.getElementById("footer");
+  const header = document.getElementById("header");
+  const hero = document.getElementById("hero");
+  const content = document.getElementById("mainContainer");
+  const footer = document.getElementById("footer");
 
   header.innerHTML = Header();
   hero.innerHTML = Hero();
-  //pendiente ver logic<
-
+  content.innerHTML = Home();
   footer.innerHTML = Footer();
 };
 

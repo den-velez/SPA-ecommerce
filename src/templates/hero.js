@@ -2,7 +2,7 @@ const Hero = () => {
   return ` 
   <section class="hero">
         <figure class="hero-imgContainer">
-          <img src="../images/hero.svg" alt="" />
+          <img src="./src/images/hero.svg" alt="big photo" />
         </figure>
       </section>
       <section class="actions">

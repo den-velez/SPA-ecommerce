@@ -34,6 +34,10 @@ module.exports = {
           from: "./src/styles/styles.css",
           to: "",
         },
+        {
+          from: "./src/images/*.svg",
+          to: "",
+        },
       ],
     }),
   ],
