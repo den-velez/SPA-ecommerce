@@ -1,3 +1,8 @@
+### issue
+  function modal on "+info" button (render at home.js), the function in index.js
+
+
+
 # SPA-ecommerce
 SPA e-commerce, able to add or empty car, modal to show all specifications. Usign CSS Grid and 100% responsive
 
