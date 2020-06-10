@@ -1,4 +1,6 @@
 const Modal = () => {
+  const container = document.getElementById("modalContainer");
+  container.classList.remove("hide");
   return `
   <div class="modal">
   <figure class="modal-imgBox"><img src="../images/hero.svg" alt=""/></figure>

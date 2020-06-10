@@ -1,20 +1,20 @@
-const Header = () => {
+const Header = (cart) => {
   return `  
-  <div class="header-logo"><span>denStore</span></div>
+  <a href="/" class="header-logo"><span>denStore</span></a>
       <ul class="header-menu">
         <li class="header-menu-items">
-          <button>New Releases</button>
+          <button name="releases">New Releases</button>
         </li>
         <li class="header-menu-items">
-          <button>Promotions</button>
+          <button name="promotions">Promotions</button>
         </li>
       </ul>
       <div class="header-cart">
-        <button class="header-cart-title">
-          <img src="./src/images/cart.svg" alt="" />
-        </button>
-        <div class="header-cart-counter"><span>Cart</span><span>(1)</span></div>
-        <span class="header-cart-total">$9000</span>
+        <a href="#/cart"class="header-cart-title">
+          <img src="./src/images/cart.svg" alt="go to cart" />
+        </a>
+        <div class="header-cart-counter"><span>Cart</span><span>(${cart.counter})</span></div>
+        <span class="header-cart-total">$${cart.total}</span>
       </div>`;
 };
 
