@@ -20,12 +20,12 @@ const Modal = (obj) => {
     <button class="modal-gallery-btn" name="pics3${obj.id}"><img name="pics3${obj.id}" src="${obj.photo3}" alt="product's photo 3"/></button>
   </figure>
   <div class="modal-aside">
-    <h3>Agregar al carrito</h3>
+    <h3>En carrito</h3>
     <div class="modal-aside-buying">
       <div class="modal-aside-buying-btns">
-        <button>-</button>
-        <button>+</button>
-      </div><span class="modal-aside-buying-counter">${counter}</span><span class="modal-aside-buying-toPay">$${total}</span>
+        <button name="bAddM1${obj.id}">-</button>
+        <button name="bAddM2${obj.id}">+</button>
+      </div><span id="modalCartCounter" class="modal-aside-buying-counter">${counter}</span><span id="modalCartTotal" class="modal-aside-buying-toPay">$${total}</span>
     </div>
     <p class="modal-aside-description">${obj.description}</p>
   </div>

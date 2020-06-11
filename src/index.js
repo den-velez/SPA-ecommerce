@@ -8,6 +8,7 @@ import RemoveItem from "./utils/removeitem";
 import CounterCarItem from "./utils/countercartitem";
 import ModalLikes from "./utils/modalLikes";
 import ModalPhotos from "./utils/modalPhotos";
+import ModalAddMinus from "./utils/modalAddMinus";
 
 let cartTotals = {
   counter: 0,
@@ -22,6 +23,7 @@ let cartContent = [
   //   price: 0,
   //   counter: 0,
   //   total: 0,
+  // photo1:
   // },
 ];
 
@@ -43,11 +45,6 @@ window.addEventListener("click", (element) => {
   const nameadd = name ? name.slice(0, 3) : "";
   const idadd = id ? id.slice(0, 3) : "";
 
-  console.log(name);
-  // if (name === "releases") {
-  //   HeaderBtns(name);
-  // } else if (name === "promotions") {
-  //   HeaderBtns(name);
   if (nameadd === "add" || idadd === "add") {
     const iditem = name ? name.slice(3, 4) : id.slice(3, 4);
     AddCart(iditem);
@@ -67,18 +64,14 @@ window.addEventListener("click", (element) => {
     ModalLikes(name);
   } else if (name2 === "pics") {
     ModalPhotos(name);
+  } else if (name2 === "bAdd") {
+    ModalAddMinus(name);
   }
-  //else if (name === "picture") {
-  //   //reemplezaar imagen
-  // }
-
-  //update cart
-  //render(ya sea home o cart)
 });
 
 window.addEventListener("change", (element) => {
   const name = element.target.name;
-  const value = element.target.value;
+  const value = 1 * element.target.value;
   if (name === "searcher") {
     Search(value);
   } else if (name == "cartcount") {

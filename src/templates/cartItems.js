@@ -22,7 +22,7 @@ ${content
   .join("")}
 <div class="cartTotals"><span></span><span></span>
   <div class="cartTitle-item"><span> </span></div>
-  <div class="cartTitle-cart"><span>Cantidad</span><span>$${
+  <div class="cartTitle-cart"><span>${totals.counter}</span><span>$${
     totals.total
   }</span></div>
 </div>`;
