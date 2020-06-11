@@ -6,7 +6,8 @@ import AddCart from "./utils/addcart";
 import EmptyCart from "./utils/emptycart";
 import RemoveItem from "./utils/removeitem";
 import CounterCarItem from "./utils/countercartitem";
-import Likes from "./utils/likes";
+import ModalLikes from "./utils/modalLikes";
+import ModalPhotos from "./utils/modalPhotos";
 
 let cartTotals = {
   counter: 0,
@@ -42,7 +43,7 @@ window.addEventListener("click", (element) => {
   const nameadd = name ? name.slice(0, 3) : "";
   const idadd = id ? id.slice(0, 3) : "";
 
-  // console.log(name);
+  console.log(name);
   // if (name === "releases") {
   //   HeaderBtns(name);
   // } else if (name === "promotions") {
@@ -63,11 +64,11 @@ window.addEventListener("click", (element) => {
       RemoveItem(id);
     }
   } else if (name2 === "like") {
-    Likes(name);
+    ModalLikes(name);
+  } else if (name2 === "pics") {
+    ModalPhotos(name);
   }
-  //  else if (name === "dislike") {
-  //   //incresase disliks
-  // } else if (name === "picture") {
+  //else if (name === "picture") {
   //   //reemplezaar imagen
   // }
 

@@ -1,6 +1,6 @@
-import data from "../utils/data";
+import data from "./data";
 
-const Likes = (name) => {
+const ModalLikes = (name) => {
   //like 1 dislike2
   const opinion = name.slice(4, 5);
   const itemselected = 1 * name.slice(5, 6);
@@ -20,4 +20,4 @@ const Likes = (name) => {
   }
 };
 
-export default Likes;
+export default ModalLikes;
