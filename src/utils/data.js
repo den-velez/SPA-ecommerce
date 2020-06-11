@@ -11,6 +11,9 @@ const data = [
     discount: 0,
     price: 30,
     photo1: "./src/images/cafe.svg",
+    photo2: "./src/images/like.svg",
+    photo3: "./src/images/hero.svg",
+    description: "this is description",
   },
   {
     id: 2,
@@ -24,6 +27,9 @@ const data = [
     discount: 20,
     price: 100,
     photo1: "./src/images/hamburguesa.svg",
+    photo2: "./src/images/like.svg",
+    photo3: "./src/images/hero.svg",
+    description: "this is description",
   },
   {
     id: 3,
@@ -37,6 +43,9 @@ const data = [
     discount: 0,
     price: 60,
     photo1: "./src/images/helado.svg",
+    photo2: "./src/images/like.svg",
+    photo3: "./src/images/hero.svg",
+    description: "this is description",
   },
   {
     id: 4,
@@ -50,6 +59,9 @@ const data = [
     discount: 50,
     price: 150,
     photo1: "./src/images/pizza.svg",
+    photo2: "./src/images/like.svg",
+    photo3: "./src/images/hero.svg",
+    description: "this is description",
   },
   {
     id: 5,
@@ -63,6 +75,9 @@ const data = [
     discount: 0,
     price: 20,
     photo1: "./src/images/rosquilla.svg",
+    photo2: "./src/images/like.svg",
+    photo3: "./src/images/hero.svg",
+    description: "this is description",
   },
   {
     id: 6,
@@ -76,6 +91,9 @@ const data = [
     discount: 5,
     price: 10,
     photo1: "./src/images/soda.svg",
+    photo2: "./src/images/like.svg",
+    photo3: "./src/images/hero.svg",
+    description: "this is description",
   },
 ];
 

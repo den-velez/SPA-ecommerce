@@ -26,7 +26,6 @@ class ItemsFilter {
     const usersearch = search || null;
 
     const results = db.filter((item) => item.name.includes(search));
-    console.log(db);
     if (results) {
       return results;
     } else {

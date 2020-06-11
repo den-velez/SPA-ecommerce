@@ -3,7 +3,8 @@ import CartItems from "../templates/cartItems";
 
 const Cart = () => {
   const content = document.getElementById("itemsContainer");
-
+  const searcher = document.getElementById("searcher");
+  searcher.innerHTML = "";
   content.innerHTML = CartItems(
     [
       {

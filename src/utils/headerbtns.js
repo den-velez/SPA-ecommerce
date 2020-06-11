@@ -3,6 +3,7 @@ import ItemsFilter from "./itemsFilter";
 import data from "./data";
 
 const HeaderBtns = (btn) => {
+  window.location.href = "/";
   const content = document.getElementById("itemsContainer");
   const filter = new ItemsFilter();
 
