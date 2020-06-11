@@ -12,13 +12,14 @@ class ItemsFilter {
 
   renderTitle(btn) {
     const element = document.getElementById("Category");
-    if (btn === "promotions") {
-      element.innerHTML = "Promociones";
-    } else if (btn === "releases") {
-      element.innerHTML = "Nuevos";
-    } else {
-      element.innerHTML = "Catalogo";
-    }
+    element.innerHTML = btn;
+    // if (btn === "promotions") {
+    //   element.innerHTML = "Promociones";
+    // } else if (btn === "releases") {
+    //   element.innerHTML = "Nuevos";
+    // } else {
+    //   element.innerHTML = "Catalogo";
+    // }
   }
 
   search(array, search) {

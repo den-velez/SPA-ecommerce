@@ -4,17 +4,20 @@ import Cart from "../pages/cart";
 import Footer from "../templates/footer";
 import Error404 from "../pages/error404";
 import Home from "../pages/home";
+import ResolveRoute from "../utils/resolveRoute";
 
 const routes = {
   "/": Home,
   "/cart": Cart,
   "/404": Error404,
+  "/promociones": Home,
+  "/nuevosproductos": Home,
+  "/inicio": Home,
 };
 
 const router = () => {
-  const pathNameSplit = location.hash.slice(1).split("/")[1] || "";
-  const url = pathNameSplit ? "/" + pathNameSplit : "/";
-  const route = url === "/" || url === "/cart" ? url : "/404";
+  const url = location.hash.slice(1).split("/")[1] || "";
+  const route = ResolveRoute(url);
 
   const cartDataHeader = JSON.parse(sessionStorage.getItem("cartTotals"));
   const header = document.getElementById("header");

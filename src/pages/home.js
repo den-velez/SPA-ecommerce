@@ -6,16 +6,26 @@ import data from "../utils/data";
 const Home = () => {
   const searcher = document.getElementById("searcher");
   const content = document.getElementById("itemsContainer");
+  const url = location.hash.slice(1).split("/")[1] || "";
+  const filter = new ItemsFilter();
+  const btnOptions = {
+    promociones: "promotions",
+    nuevosproductos: "releases",
+    inicio: "inicio",
+  };
+  let btn = "";
 
-  // const fi = new ItemsFilter();
-  // const btn = "releases";
-  // const se = "";
-  // const results = fi.filtered(data, btn);
-  // // const results = fi.search(data, se);
-  // fi.renderTitle(btn);
+  if (url === "" || url === "inicio") {
+    searcher.innerHTML = Searcher();
+    content.innerHTML = Items(data);
+  } else {
+    btn = btnOptions[url];
 
-  searcher.innerHTML = Searcher();
-  content.innerHTML = Items(data);
+    const results = filter.filtered(data, btn);
+    searcher.innerHTML = Searcher();
+    filter.renderTitle(btn);
+    content.innerHTML = Items(results);
+  }
 };
 
 export default Home;

@@ -11,7 +11,6 @@ const AddCart = (iditem) => {
   const verificar = cartContent.filter((item) => item.id == iditem);
   if (verificar.length > 0) {
     const item = verificar[0].id;
-    console.log(item);
     for (let x of cartContent) {
       if (x.id == item) {
         x.counter += 1;
@@ -28,6 +27,7 @@ const AddCart = (iditem) => {
       price: producto[0].price,
       counter: 1,
       total: producto[0].price,
+      photo1: producto[0].photo1,
     };
     cartTotals.total = cartTotals.total + agregar.price;
     cartContent.push(agregar);

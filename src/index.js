@@ -1,9 +1,12 @@
 import router from "./routes";
-import HeaderBtns from "./utils/headerbtns";
 import Search from "./utils/search";
 import ModalOpen from "./utils/modalOpen";
 import ModalClose from "./utils/modalClose";
 import AddCart from "./utils/addcart";
+import EmptyCart from "./utils/emptycart";
+import RemoveItem from "./utils/removeitem";
+import CounterCarItem from "./utils/countercartitem";
+import Likes from "./utils/likes";
 
 let cartTotals = {
   counter: 0,
@@ -39,12 +42,12 @@ window.addEventListener("click", (element) => {
   const nameadd = name ? name.slice(0, 3) : "";
   const idadd = id ? id.slice(0, 3) : "";
 
-  // console.log(id);
-  if (name === "releases") {
-    HeaderBtns(name);
-  } else if (name === "promotions") {
-    HeaderBtns(name);
-  } else if (nameadd === "add" || idadd === "add") {
+  // console.log(name);
+  // if (name === "releases") {
+  //   HeaderBtns(name);
+  // } else if (name === "promotions") {
+  //   HeaderBtns(name);
+  if (nameadd === "add" || idadd === "add") {
     const iditem = name ? name.slice(3, 4) : id.slice(3, 4);
     AddCart(iditem);
   } else if (id === "modalContainer") {
@@ -52,13 +55,17 @@ window.addEventListener("click", (element) => {
   } else if (name2 === "info") {
     const item = name ? name.slice(4, 5) : "";
     ModalOpen(item);
+  } else if (name === "emptyCart") {
+    EmptyCart();
+  } else if (name === "removeone") {
+    const id = element.target.id;
+    if (id) {
+      RemoveItem(id);
+    }
+  } else if (name2 === "like") {
+    Likes(name);
   }
-  //  else if (name === "adddd" || id === "adffd") {
-  // } else if (name === "removeone") {
-  //   //discount 1 piece
-  // } else if (name === "like") {
-  //   //increase likes
-  // } else if (name === "dislike") {
+  //  else if (name === "dislike") {
   //   //incresase disliks
   // } else if (name === "picture") {
   //   //reemplezaar imagen
@@ -71,13 +78,15 @@ window.addEventListener("click", (element) => {
 window.addEventListener("change", (element) => {
   const name = element.target.name;
   const value = element.target.value;
-  console.log(value);
   if (name === "searcher") {
     Search(value);
-  } else if (name == "countercart") {
-    //update cart
+  } else if (name == "cartcount") {
+    if (value < 0) {
+      const id = element.target.id;
+      CounterCarItem(id, 0);
+    } else {
+      const id = element.target.id;
+      CounterCarItem(id, value);
+    }
   }
-
-  //update cart
-  //render
 });

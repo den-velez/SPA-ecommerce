@@ -626,6 +626,7 @@ body {
 }
 .modal-info-name {
   padding-left: 20px;
+  text-transform: capitalize;
   font-size: 1.5rem;
 }
 .modal-info-price {
