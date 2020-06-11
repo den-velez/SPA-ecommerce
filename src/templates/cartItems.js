@@ -4,7 +4,7 @@ const CartItems = (content, totals) => {
   <button class="cartActions-btn" name="emptyCart" ><img src="./src/images/borrar.svg" alt="Borrar Todo" name="emptyCart"/></button>
 </div>
 <div class="cartTitle"><span></span><span></span>
-  <div class="cartTitle-item"><span>Name</span><span>Brand</span><span>Price</span></div>
+  <div class="cartTitle-item"><span>Nombre</span><span>Marca</span><span>Precio</span></div>
   <div class="cartTitle-cart"><span>Cantidad</span><span>Total </span></div>
 </div>
 ${content

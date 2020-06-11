@@ -9,8 +9,8 @@ const Home = () => {
   const url = location.hash.slice(1).split("/")[1] || "";
   const filter = new ItemsFilter();
   const btnOptions = {
-    promociones: "promotions",
-    nuevosproductos: "releases",
+    promociones: "Promociones",
+    nuevosproductos: "Nuevos",
     inicio: "inicio",
   };
   let btn = "";
