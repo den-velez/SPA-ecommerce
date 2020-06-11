@@ -5,7 +5,7 @@
   
   You are able to add products on home page, or open the specificacions and add o remove of the cart and give us your opinion (like or dislike)
   
-  It has a filter our new releases or promotions,
+  It has a filter our new releases, promotions or use the finder typing name of the product
   
   enjoy buying food!
 
