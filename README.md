@@ -1,6 +1,3 @@
-### issue
-  function modal on "+info" button (render at home.js), the function in index.js
-
 
 
 # SPA-ecommerce
