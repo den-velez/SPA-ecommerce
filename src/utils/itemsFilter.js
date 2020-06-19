@@ -1,9 +1,9 @@
 class ItemsFilter {
   filtered(array, btn) {
     const db = array;
-    if (btn === "releases") {
+    if (btn === "Nuevos") {
       return db.filter((item) => item.newRelease);
-    } else if (btn === "promotions") {
+    } else if (btn === "Promociones") {
       return db.filter((item) => item.promotions);
     } else {
       return db;
@@ -24,9 +24,9 @@ class ItemsFilter {
 
   search(array, search) {
     const db = array;
-    const usersearch = search || null;
-
+    // const usersearch = search || null;
     const results = db.filter((item) => item.name.includes(search));
+
     if (results) {
       return results;
     } else {

@@ -22,6 +22,7 @@ const Home = () => {
     btn = btnOptions[url];
 
     const results = filter.filtered(data, btn);
+    console.log(btn);
     searcher.innerHTML = Searcher();
     filter.renderTitle(btn);
     content.innerHTML = Items(results);

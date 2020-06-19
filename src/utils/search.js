@@ -4,6 +4,7 @@ import NoResults from "../templates/noresults";
 import data from "./data";
 
 const Search = (value) => {
+  console.log(value);
   const content = document.getElementById("itemsContainer");
   const filter = new ItemsFilter();
   const results = filter.search(data, value);

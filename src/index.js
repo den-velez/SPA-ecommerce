@@ -71,9 +71,10 @@ window.addEventListener("click", (element) => {
 
 window.addEventListener("change", (element) => {
   const name = element.target.name;
+  console.log(name);
   const value = 1 * element.target.value;
   if (name === "searcher") {
-    Search(value);
+    Search(element.target.value);
   } else if (name == "cartcount") {
     if (value < 0) {
       const id = element.target.id;
