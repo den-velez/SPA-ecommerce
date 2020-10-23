@@ -1,6 +1,6 @@
 
 
-# e-Commerce (simulation)
+# e-Commerce
   Food Store, easy to buy any food of our menu. 
   
   You are able to add products on home page, or open the specificacions and add o remove of the cart and give us your opinion (like or dislike)
@@ -17,7 +17,8 @@
     - js for interations
     
 ### database
-    It doesn`t connect to API (for this version), data initial it has inside but while you're using it will be in sessionStorage
+    It doesn`t connect to API (for this version), data initial it has inside 
+    but while you're using it will be in sessionStorage
     
 ### dependecies
   - @babel/core
